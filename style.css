@@ -1,0 +1,84 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: #2D3142;
+    overflow: hidden;
+    font-family: 'Staatliches', cursive;
+}
+.color{
+    color: #EF8354;
+}
+#container{
+    display: grid;
+    grid-gap: 1vh;
+    grid-template-columns: repeat(4, 10vh);
+    grid-template-rows: repeat(5, 10vh)
+}
+#result{
+    grid-column: 1/4;
+    font-size: 50px;
+    padding: 5px 10px;
+    background: #2D3142;
+    color: #EF8354;
+    border: 5px solid rgb(28, 30, 41);
+    outline: none;
+    font-family: 'Staatliches', cursive;
+}
+.clear{
+    background: rgb(28, 30, 41) !important;
+    grid-column: 4/5;
+}
+.equal{
+    border: none;
+    font-size: 35px;
+    background: rgb(28, 30, 41);
+    color: #BFC0C0;
+    outline: none;
+    transition: background 300ms, color 300ms;
+    font-family: 'Staatliches', cursive;
+}
+.equal:hover{
+    border: 5px solid #EF8354;
+}
+.btn{
+    font-family: 'Staatliches', cursive;
+    border: none;
+    font-size: 35px;
+    background: #4F5D75;
+    color: #BFC0C0;
+    outline: none;
+    transition: background 300ms, color 300ms;
+}
+.btn:hover{
+    border: 5px solid #EF8354;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    background: rgb(28, 30, 41);
+    width: 100%;
+    padding: 5px;
+    color: white !important;
+    font-weight: 300;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a:hover{
+    color: #EF8354;
+    text-decoration: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
